@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Norme extends Model
 {
     use HasFactory;
-    protected $guarded=['IC'];
+    protected $fillable=['ic','code_nm','version_nm','titre','origine','version_originale'];
     protected $table="normes";
+    public $timestamps = false;
+
+
 }
